@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="UTF-8" />
-        <link rel="icon" type="image/x-icon" href="./images/tea_favicon.svg" />
+        <link rel="icon" type="image/x-icon" href="./images/cup.png" />
         <!-- <link rel="stylesheet" href="style.css"> -->
         <!--? Tailwind CSS cdn  -->
         <script src="https://cdn.tailwindcss.com"></script>
@@ -457,12 +457,16 @@
         >
             <div class="w-9/12 mx-auto">
                 <!--? Logo -->
-                <div class="mb-12 flex justify-between">
-                    <img class="mb-12" src="./images/cup.png" alt="" />
-                    <div class="flex items-center gap-4">
-                        <h4>Ready to get started?</h4>
+                <div class="mb-12 flex justify-between flex-col md:flex-row">
+                    <img
+                        class="mb-12 md:w-auto w-1/4 md:mx-0 mx-auto"
+                        src="./images/cup.png"
+                        alt=""
+                    />
+                    <div class="flex items-center gap-6 md:flex-row flex-col">
+                        <h4 class="font-medium">Ready to get started?</h4>
                         <button
-                            class="bg-gradient-to-r from-orange-500 to-red-500 px-3 py-3 rounded-lg text-white font-bold"
+                            class="bg-gradient-to-r from-orange-500 to-red-500 px-5 py-3 rounded-lg text-white font-bold"
                         >
                             Get Started
                         </button>
@@ -473,89 +477,95 @@
                     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
                 >
                     <!--? First Column -->
-                    <div>
+                    <div class="space-y-4">
                         <h3 class="font-semibold text-lg">Quick Links</h3>
                         <ul class="space-y-4">
                             <li>
-                                <a class="hover:text-orange-600" href="home"
+                                <a class="hover:text-primary" href="home"
                                     >Home</a
                                 >
                             </li>
                             <li>
-                                <a class="hover:text-orange-600" href="home"
+                                <a class="hover:text-primary" href="home"
                                     >About Us</a
                                 >
                             </li>
                             <li>
-                                <a class="hover:text-orange-600" href="home"
+                                <a class="hover:text-primary" href="home"
                                     >Insurance</a
                                 >
                             </li>
                             <li>
-                                <a class="hover:text-orange-600" href="home"
+                                <a class="hover:text-primary" href="home"
                                     >Privacy Policy</a
                                 >
                             </li>
                         </ul>
                     </div>
                     <!--? Second Column -->
-                    <div>
+                    <div class="space-y-4">
                         <h3 class="font-semibold text-lg">Our Services</h3>
                         <ul class="space-y-4">
                             <li>
-                                <a class="hover:text-orange-600" href="home"
+                                <a class="hover:text-primary" href="home"
                                     >Life Insurance</a
                                 >
                             </li>
                             <li>
-                                <a class="hover:text-orange-600" href="home"
+                                <a class="hover:text-primary" href="home"
                                     >Car Insurance</a
                                 >
                             </li>
                             <li>
-                                <a class="hover:text-orange-600" href="home"
+                                <a class="hover:text-primary" href="home"
                                     >Health Insurance</a
                                 >
                             </li>
                             <li>
-                                <a class="hover:text-orange-600" href="home"
+                                <a class="hover:text-primary" href="home"
                                     >House Insurance</a
                                 >
                             </li>
                         </ul>
                     </div>
                     <!--? Third Column -->
-                    <div>
+                    <div class="space-y-4">
                         <h3 class="font-semibold text-lg">Help</h3>
                         <ul class="space-y-4">
                             <li>
-                                <a class="hover:text-orange-600" href="home"
+                                <a class="hover:text-primary" href="home"
                                     >FAQs</a
                                 >
                             </li>
                             <li>
-                                <a class="hover:text-orange-600" href="home"
+                                <a class="hover:text-primary" href="home"
                                     >Contact Us</a
                                 >
                             </li>
                         </ul>
                     </div>
                     <!--? Fourth Column -->
-                    <div class="pl-8">
-                        <h3>Subscribe to our Newsletter</h3>
+                    <div class="lg:pl-8 space-y-6">
+                        <h3 class="text-2xl font-bold">
+                            Subscribe to our Newsletter
+                        </h3>
                         <div class="flex flex-col space-y-4">
-                            <input
-                                placeholder="Email Address"
-                                type="text"
-                                class="bg-transparent border-b-2 border-black w-1/2 lg:w-1/2"
-                            /><i
-                                class="fa-solid fa-chevron-right w-8 h-8 bg-orange-600 rounded-full text-white justify-center items-center inline-flex"
-                            ></i>
-                            <div
-                                class="flex justify-between w-2/5 mb-4 mt-8 py-4"
-                            >
-                                <i class="fa-brands fa-facebook"></i>
-                                <i class="fa-brands fa-instagram"></i>
+                            <div class="flex">
+                                <input
+                                    placeholder="Email Address"
+                                    type="text"
+                                    class="bg-transparent border-b-2 border-black w-11/12 lg:w-56 focus:border-b-primary outline-none"
+                                /><i
+                                    class="fa-solid fa-chevron-right w-8 h-8 bg-orange-600 rounded-full text-white justify-center items-center flex"
+                                ></i>
+                            </div>
+                            <div class="flex gap-8 mb-4 mt-8 py-4 text-xl">
+                                <i
+                                    class="fa-brands fa-facebook-f hover:text-blue-600"
+                                ></i>
+                                <i
+                                    class="fa-brands fa-instagram hover:bg-gradient-to-br from-indigo-700 to-primary hover:bg-clip-text hover:text-transparent"
+                                ></i>
                                 <i class="fa-brands fa-x-twitter"></i>
                             </div>
                         </div>
